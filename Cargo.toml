@@ -20,6 +20,14 @@ regex = "1"
 criterion = "0.3"
 indoc = "1.0"
 
+[lib]
+name = "sqlformat"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.12.1"
+features = ["extension-module"]
+
 [[bench]]
 name = "bench"
 harness = false
